@@ -121,85 +121,71 @@ public class SServerTrainer extends AbstractUDPClient implements ActionsTrainer 
     }
 
     /** {@inheritDoc} */
-    @Override
     public void changePlayMode(PlayMode playMode) {
         this.commandFactory.addChangePlayModeCommand(playMode);
     }
 
     /** {@inheritDoc} */
-    @Override
     public void movePlayer(ActionsPlayer p, double x, double y) {
         this.commandFactory.addMovePlayerCommand(p, x, y);
     }
 
     /** {@inheritDoc} */
-    @Override
     public void moveBall(double x, double y) {
         this.commandFactory.addMoveBallCommand(x, y);
     }
 
     /** {@inheritDoc} */
-    @Override
     public void checkBall() {
         this.commandFactory.addCheckBallCommand();
     }
 
     /** {@inheritDoc} */
-    @Override
     public void startGame() {
         this.commandFactory.addStartCommand();
     }
 
     /** {@inheritDoc} */
-    @Override
     public void recover() {
         this.commandFactory.addRecoverCommand();
     }
 
     /** {@inheritDoc} */
-    @Override
     public void eye(boolean eyeOn) {
         this.commandFactory.addEyeCommand(eyeOn);
     }
 
     /** {@inheritDoc} */
-    @Override
     public void ear(boolean earOn) {
         this.commandFactory.addEarCommand(earOn);
     }
 
     /** {@inheritDoc} */
-    @Override
     public void look() {
         this.commandFactory.addLookCommand();
     }
 
     /** {@inheritDoc} */
-    @Override
     public void teamNames() {
         this.commandFactory.addTeamNamesCommand();
     }
 
     /** {@inheritDoc} */
-    @Override
     public void changePlayerType(String teamName, int unum, int playerType) {
         this.commandFactory.addChangePlayerTypeCommand(teamName, unum, playerType);
     }
 
     /** {@inheritDoc} */
-    @Override
     public void say(String message) {
         this.commandFactory.addSayCommand(message);
     }
 
     /** {@inheritDoc} */
-    @Override
     public void bye() {
         this.commandFactory.addByeCommand();
     }
 
     /** {@inheritDoc} */
-    @Override
     public void handleError(String error) {
         log.error(error);
     }
@@ -236,7 +222,6 @@ public class SServerTrainer extends AbstractUDPClient implements ActionsTrainer 
         /**
          * @inheritDoc
          */
-        @Override
         public void seeCommand(String cmd) {
             seeCommand = cmd;
         }
@@ -244,7 +229,6 @@ public class SServerTrainer extends AbstractUDPClient implements ActionsTrainer 
         /**
          * @inheritDoc
          */
-        @Override
         public void hearCommand(String cmd) {
             hearCommand = cmd;
         }
@@ -252,7 +236,6 @@ public class SServerTrainer extends AbstractUDPClient implements ActionsTrainer 
         /**
          * @inheritDoc
          */
-        @Override
         public void senseBodyCommand(String cmd) {
             senseBodyCommand = cmd;
         }
@@ -260,7 +243,6 @@ public class SServerTrainer extends AbstractUDPClient implements ActionsTrainer 
         /**
          * @inheritDoc
          */
-        @Override
         public void initCommand(String cmd) {
             initCommand = cmd;
         }
@@ -268,7 +250,6 @@ public class SServerTrainer extends AbstractUDPClient implements ActionsTrainer 
         /**
          * @inheritDoc
          */
-        @Override
         public void errorCommand(String cmd) {
             errorCommand = cmd;
         }
@@ -276,7 +257,6 @@ public class SServerTrainer extends AbstractUDPClient implements ActionsTrainer 
         /**
          * @inheritDoc
          */
-        @Override
         public void serverParamCommand(String cmd) {
             serverParamCommand = cmd;
         }
@@ -284,7 +264,6 @@ public class SServerTrainer extends AbstractUDPClient implements ActionsTrainer 
         /**
          * @inheritDoc
          */
-        @Override
         public void playerParamCommand(String cmd) {
             playerParamCommand = cmd;
         }
@@ -292,7 +271,6 @@ public class SServerTrainer extends AbstractUDPClient implements ActionsTrainer 
         /**
          * @inheritDoc
          */
-        @Override
         public void playerTypeCommand(String cmd) {
             playerTypeCommand = cmd;
         }
@@ -300,7 +278,6 @@ public class SServerTrainer extends AbstractUDPClient implements ActionsTrainer 
         /**
          * @inheritDoc
          */
-        @Override
         public void changePlayerTypeCommand(String cmd) {
             changePlayerTypeCommand = cmd;
         }
@@ -308,7 +285,6 @@ public class SServerTrainer extends AbstractUDPClient implements ActionsTrainer 
         /**
          * @inheritDoc
          */
-        @Override
         public void okCommand(String cmd) {
             okCommand = cmd;
         }
@@ -316,7 +292,6 @@ public class SServerTrainer extends AbstractUDPClient implements ActionsTrainer 
         /**
          * @inheritDoc
          */
-        @Override
         public void warningCommand(String cmd) {
             warningCommand = cmd;
         }

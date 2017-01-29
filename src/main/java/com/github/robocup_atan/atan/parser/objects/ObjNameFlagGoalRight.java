@@ -51,7 +51,6 @@ public class ObjNameFlagGoalRight implements ObjName {
     }
 
     /** {@inheritDoc} */
-    @Override
     public void infoSeeFromEast(ControllerPlayer c, double distance, double direction, double distChange,
                                 double dirChange, double bodyFacingDirection, double headFacingDirection) {
         switch (qualifier) {
@@ -71,7 +70,6 @@ public class ObjNameFlagGoalRight implements ObjName {
     }
 
     /** {@inheritDoc} */
-    @Override
     public void infoSeeFromWest(ControllerPlayer c, double distance, double direction, double distChange,
                                 double dirChange, double bodyFacingDirection, double headFacingDirection) {
         switch (qualifier) {
@@ -91,23 +89,19 @@ public class ObjNameFlagGoalRight implements ObjName {
     }
 
     /** {@inheritDoc} */
-    @Override
     public void infoSeeFromEast(ControllerCoach c, double x, double y, double deltaX, double deltaY, double bodyAngle,
                                 double neckAngle) {
         c.infoSeeGoalOwn(x, y);
     }
 
     /** {@inheritDoc} */
-    @Override
     public void infoSeeFromWest(ControllerCoach c, double x, double y, double deltaX, double deltaY, double bodyAngle,
                                 double neckAngle) {
         c.infoSeeGoalOther(x, y);
     }
 
     /** {@inheritDoc} */
-    @Override
     public void infoSee(ControllerTrainer c) {
-
-        // TODO Auto-generated method stub
+    	// Nothing to do for the trainer
     }
 }

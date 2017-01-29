@@ -1,4 +1,4 @@
-package com.github.robocup_atan.atan.parser.player;
+package com.github.robocup_atan.atan.parser;
 
 /*
  * #%L

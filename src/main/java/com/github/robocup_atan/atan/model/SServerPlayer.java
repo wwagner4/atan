@@ -132,84 +132,70 @@ public class SServerPlayer extends AbstractUDPClient implements ActionsPlayer {
     }
 
     /** {@inheritDoc} */
-    @Override
     public void setTeamEast(boolean is) {
         this.isTeamEast = is;
     }
 
     /** {@inheritDoc} */
-    @Override
     public void dash(int power) {
         this.commandFactory.addDashCommand(power);
     }
 
     /** {@inheritDoc} */
-    @Override
     public void kick(int power, double direction) {
         this.commandFactory.addKickCommand(power, (int) direction);
     }
 
     /** {@inheritDoc} */
-    @Override
     public void move(int x, int y) {
         this.commandFactory.addMoveCommand(x, y);
     }
 
     /** {@inheritDoc} */
-    @Override
     public void say(String message) {
         this.commandFactory.addSayCommand(message);
     }
 
     /** {@inheritDoc} */
-    @Override
     public void turn(double angle) {
         this.commandFactory.addTurnCommand((int) angle);
     }
 
     /** {@inheritDoc} */
-    @Override
     public void turnNeck(double angle) {}
 
     /** {@inheritDoc} */
-    @Override
     public void catchBall(double direction) {
         this.commandFactory.addCatchCommand((int) direction);
     }
 
     /** {@inheritDoc} */
-    @Override
     public void changeViewMode(ViewQuality quality, ViewAngle angle) {
         this.commandFactory.addChangeViewCommand(angle, quality);
     }
 
     /** {@inheritDoc} */
-    @Override
     public void bye() {
         this.commandFactory.addByeCommand();
     }
 
     /** {@inheritDoc} */
-    @Override
     public String getTeamName() {
         return teamName;
     }
 
     /** {@inheritDoc} */
-    @Override
     public void setNumber(int num) {
         number = num;
         super.setName(teamName + " Player # " + getNumber());
     }
 
     /** {@inheritDoc} */
-    @Override
     public int getNumber() {
         return number;
     }
 
     /** {@inheritDoc} */
-    @Override
     public boolean isTeamEast() {
         return isTeamEast;
     }
@@ -246,7 +232,6 @@ public class SServerPlayer extends AbstractUDPClient implements ActionsPlayer {
     }
 
     /** {@inheritDoc} */
-    @Override
     public void handleError(String error) {
         log.error(error);
     }
@@ -296,7 +281,6 @@ public class SServerPlayer extends AbstractUDPClient implements ActionsPlayer {
         /**
          * @inheritDoc
          */
-        @Override
         public void seeCommand(String cmd) {
             seeCommand = cmd;
         }
@@ -304,7 +288,6 @@ public class SServerPlayer extends AbstractUDPClient implements ActionsPlayer {
         /**
          * @inheritDoc
          */
-        @Override
         public void hearCommand(String cmd) {
             hearCommand = cmd;
         }
@@ -312,7 +295,6 @@ public class SServerPlayer extends AbstractUDPClient implements ActionsPlayer {
         /**
          * @inheritDoc
          */
-        @Override
         public void senseBodyCommand(String cmd) {
             senseBodyCommand = cmd;
         }
@@ -320,7 +302,6 @@ public class SServerPlayer extends AbstractUDPClient implements ActionsPlayer {
         /**
          * @inheritDoc
          */
-        @Override
         public void initCommand(String cmd) {
             initCommand = cmd;
         }
@@ -328,7 +309,6 @@ public class SServerPlayer extends AbstractUDPClient implements ActionsPlayer {
         /**
          * @inheritDoc
          */
-        @Override
         public void errorCommand(String cmd) {
             errorCommand = cmd;
         }
@@ -336,7 +316,6 @@ public class SServerPlayer extends AbstractUDPClient implements ActionsPlayer {
         /**
          * @inheritDoc
          */
-        @Override
         public void serverParamCommand(String cmd) {
             serverParamCommand = cmd;
         }
@@ -344,7 +323,6 @@ public class SServerPlayer extends AbstractUDPClient implements ActionsPlayer {
         /**
          * @inheritDoc
          */
-        @Override
         public void playerParamCommand(String cmd) {
             playerParamCommand = cmd;
         }
@@ -352,7 +330,6 @@ public class SServerPlayer extends AbstractUDPClient implements ActionsPlayer {
         /**
          * @inheritDoc
          */
-        @Override
         public void playerTypeCommand(String cmd) {
             playerTypeCommand = cmd;
         }
@@ -360,7 +337,6 @@ public class SServerPlayer extends AbstractUDPClient implements ActionsPlayer {
         /**
          * @inheritDoc
          */
-        @Override
         public void changePlayerTypeCommand(String cmd) {
             changePlayerTypeCommand = cmd;
         }
@@ -368,7 +344,6 @@ public class SServerPlayer extends AbstractUDPClient implements ActionsPlayer {
         /**
          * @inheritDoc
          */
-        @Override
         public void okCommand(String cmd) {
             okCommand = cmd;
         }
@@ -376,7 +351,6 @@ public class SServerPlayer extends AbstractUDPClient implements ActionsPlayer {
         /**
          * @inheritDoc
          */
-        @Override
         public void warningCommand(String cmd) {
             warningCommand = cmd;
         }
